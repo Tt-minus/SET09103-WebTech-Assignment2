@@ -1,0 +1,15 @@
+<head>
+<script src="static/scripts/d3.v7.js"></script>
+<link rel="stylesheet" type="text/css href="styles/main.css">
+</head>
+<body>
+	<h1>Dataset</h1>
+	<a href="menu">Menu</a>
+	</br>
+	<button onclick="render(lengthData, 'div#fishData', 1400, 500, d=>d.FISH_LENGTH)">Length</button>
+	<button onclick="altrender(population, 'div#fishData', 2000, 500, d=>d.SPCSNO)">Population</button>
+	
+	<div id="fishData"></div>
+	<script type="module" src="static/scripts/data.js"></script>
+
+</body>
